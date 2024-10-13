@@ -14,7 +14,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "English with Labelle | Aulas personalizadas e online de inglês",
   description: "English with Labelle | Aulas personalizadas e online de inglês",
-  icons: "./favicon.ico",
+  icons: "/public/favicon.ico",
 };
 
 export default function RootLayout({
