@@ -19,7 +19,7 @@ export const Cta = () => {
             href="https://wa.me/5512974112806?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20as%20aulas%20de%20ingl%C3%AAs."
             target="_blank"
             rel="noopener"
-            className="flex items-center py-3 mx-auto text-lg font-medium text-center text-indigo-600 bg-white rounded-md px-7 lg:px-10 lg:py-5 "
+            className="flex items-center justify-center py-3 mx-auto text-lg font-medium text-center text-indigo-600 bg-white rounded-md px-7 lg:px-10 lg:py-5 "
           >
             FALE COMIGO
             <FaWhatsapp className="ml-2" style={{ width: 24, height: 24 }} />
