@@ -11,7 +11,7 @@ export const Testimonials = () => {
     <Container>
       <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
         <div className="lg:col-span-2 xl:col-auto">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
+          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-4 lg:px-14 rounded-2xl py-4 lg:py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
               Muito atenciosa, cria um <Mark>ambiente confortável</Mark> e
               seguro para o aprendizado. Adapta as aulas para preferências e
@@ -23,7 +23,7 @@ export const Testimonials = () => {
           </div>
         </div>
         <div>
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
+          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-4 lg:px-14 rounded-2xl py-4 lg:py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
               I love my classes. The best and the <Mark>funniest moment</Mark>{" "}
               of my day!! She`s excellent. I recommend!!
@@ -37,7 +37,7 @@ export const Testimonials = () => {
           </div>
         </div>
         <div className="">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
+          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-4 lg:px-14 rounded-2xl py-4 lg:py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
               Professora sensacional, método de ensino perfeito, atenciosa com
               os alunos, <Mark>metodologia de ensino</Mark> que mudou minha

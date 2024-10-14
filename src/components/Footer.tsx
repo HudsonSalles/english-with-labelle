@@ -7,31 +7,28 @@ import Image from "next/image";
 export function Footer() {
   return (
     <div className="relative">
-      <div className="grid max-w-screen-xl grid-cols-1 gap-10  mx-auto border-t border-gray-100 dark:border-trueGray-700 lg:grid-cols-5 p-8">
+      <div className="flex flex-col justify-center items-center lg:items-start lg:justify-start lg:grid max-w-screen-xl grid-cols-1 lg:gap-10  mx-auto border-t border-gray-100 dark:border-trueGray-700 lg:grid-cols-5 p-8">
         <div className="lg:col-span-2">
-          <div>
-            {" "}
-            <Link href="/">
-              <span className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100 gap-2">
-                <span>
-                  <Image
-                    src="/img/icon_e_white.png"
-                    alt="E"
-                    width="40"
-                    height="40"
-                  />
-                </span>
-                <div className="flex flex-col ">
-                  <p>English</p>
-                  <p style={{ fontSize: "12px" }} className="text-sm">
-                    with Labelle
-                  </p>
-                </div>
+          <Link href="/">
+            <span className="flex justify-center lg:justify-start items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100 gap-2">
+              <span>
+                <Image
+                  src="/img/icon_e_white.png"
+                  alt="E"
+                  width="40"
+                  height="40"
+                />
               </span>
-            </Link>
-          </div>
+              <div className="flex flex-col ">
+                <p>English</p>
+                <p style={{ fontSize: "12px" }} className="text-sm">
+                  with Labelle
+                </p>
+              </div>
+            </span>
+          </Link>
 
-          <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
+          <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400 text-center lg:text-left mb-6 lg:mb-0">
             <b>English with Labelle</b> oferece aulas de inglês personalizadas
             desde 2019. Com anos de experiência e um profundo conhecimento das
             necessidades dos alunos.
@@ -76,17 +73,9 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="my-4 text-sm text-center text-gray-600 dark:text-gray-400">
-        Copyright © {new Date().getFullYear()}. Made with ♥ by{" "}
-        <a href="https://web3templates.com/" target="_blank" rel="noopener">
-          Web3Templates.
-        </a>{" "}
-        Illustrations from{" "}
-        <a href="https://www.glazestock.com/" target="_blank" rel="noopener">
-          Glazestock
-        </a>
-        <br />
-        Edited by{" "}
+      <div className="mb-4 text-sm text-center text-gray-600 dark:text-gray-400">
+        Copyright © {new Date().getFullYear()}. Made with ♥ by Web3Templates.{" "}
+        Illustrations from Glazestock. Edited by{" "}
         <a
           href="https://www.linkedin.com/in/hudsonsalles/"
           target="_blank"
