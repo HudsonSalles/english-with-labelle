@@ -7,6 +7,7 @@ import "./globals.css";
 //internal components
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import Head from "next/head";
 
 //fonts
 const inter = Inter({ subsets: ["latin"] });
@@ -24,6 +25,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" suppressHydrationWarning>
+      <Head>
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=G-LY1TZ876EX`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LY1TZ876EX');
+`,
+          }}
+        />
+      </Head>
       <body className={inter.className}>
         <ThemeProvider attribute="class">
           <Navbar />
