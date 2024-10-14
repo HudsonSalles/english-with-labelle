@@ -29,18 +29,17 @@ export default function RootLayout({
         <script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=G-LY1TZ876EX`}
-        />
+        ></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-  gtag('config', 'G-LY1TZ876EX');
-`,
+            gtag('config', 'G-LY1TZ876EX')`,
           }}
-        />
+        ></script>
       </Head>
       <body className={inter.className}>
         <ThemeProvider attribute="class">
