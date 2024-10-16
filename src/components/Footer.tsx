@@ -1,31 +1,47 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
+
+//images
+import logoDark from "../../public/img/logo.png";
+import logoLight from "../../public/img/logo_white.png";
 
 //components
+import { useTheme } from "next-themes";
 import Link from "next/link";
 import Image from "next/image";
 
 export function Footer() {
+  const [mounted, setMounted] = useState(false);
+  const { theme, setTheme } = useTheme();
+  const themeLogo = theme === "dark" ? logoLight : logoDark;
+
+  useEffect(() => {
+    if (!theme || theme === "system") {
+      const storedTheme = JSON.parse(localStorage.getItem("dark"));
+      if (storedTheme) {
+        setTheme(storedTheme);
+      } else {
+        // Set default theme if not stored
+        localStorage.setItem("theme", JSON.stringify("dark"));
+        setTheme("dark");
+      }
+    }
+  }, [theme, setTheme]);
+
+  // When mounted on client, now we can show the UI
+  useEffect(() => setMounted(true), []);
+  if (!mounted) return null;
+
   return (
     <div className="relative">
       <div className="flex flex-col justify-center items-center lg:items-start lg:justify-start lg:grid max-w-screen-xl grid-cols-1 lg:gap-10  mx-auto border-t border-gray-100 dark:border-trueGray-700 lg:grid-cols-5 p-8">
         <div className="lg:col-span-2">
-          <Link href="/">
-            <span className="flex justify-center lg:justify-start items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100 gap-2">
-              <span>
-                <Image
-                  src="/img/icon_e_white.png"
-                  alt="E"
-                  width="40"
-                  height="40"
-                />
-              </span>
-              <div className="flex flex-col ">
-                <p>English</p>
-                <p style={{ fontSize: "12px" }} className="text-sm">
-                  with Labelle
-                </p>
-              </div>
-            </span>
+          <Link href="/" className="flex justify-center lg:justify-start">
+            <Image
+              src={themeLogo}
+              alt="Logo English with Labelle"
+              style={{ maxWidth: 180, height: "auto" }}
+            />
           </Link>
 
           <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400 text-center lg:text-left mb-6 lg:mb-0">
