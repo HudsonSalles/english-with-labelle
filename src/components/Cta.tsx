@@ -16,6 +16,7 @@ export const Cta = () => {
         </div>
         <div className="flex-shrink-0 w-full text-center lg:w-auto">
           <a
+            id="cta_footer"
             href="https://wa.me/5512974112806?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20as%20aulas%20de%20ingl%C3%AAs."
             target="_blank"
             rel="noopener"

@@ -62,6 +62,7 @@ export function Footer() {
           <div>Nossas redes</div>
           <div className="flex mt-5 space-x-5 text-gray-400 dark:text-gray-500">
             <a
+              id="social_instagram"
               href="https://www.instagram.com/englishwithlabelle"
               target="_blank"
               rel="noopener"
@@ -70,6 +71,7 @@ export function Footer() {
               <Instagram />
             </a>
             <a
+              id="social_facebook"
               href="https://www.facebook.com/englishwithlabelle"
               target="_blank"
               rel="noopener"
@@ -78,6 +80,7 @@ export function Footer() {
               <Facebook />
             </a>
             <a
+              id="social_linkedin"
               href="https://www.linkedin.com/company/english-with-labelle/"
               target="_blank"
               rel="noopener"
