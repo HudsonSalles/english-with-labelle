@@ -31,6 +31,7 @@ export const Hero = () => {
 
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row mt-6">
               <a
+                id="cta_hero"
                 href="https://wa.me/5512974112806?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20as%20aulas%20de%20ingl%C3%AAs."
                 target="_blank"
                 rel="noopener"
